@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+h1{
+    font-family: Assistant;
+    color: #D3E10E;
+    text-align: center;
+    position: relative;
+    top: -440px;
+    font-size: 5rem;
+}
+p{
+text-align: center;
+position: relative;
+top: -400px;
+font-family: Assistant;
+color: #F9F9F9;
+}
+form{
+    direction: rtl;
+    text-align: right;
+    margin-right: 20px;
+    text-align: center;
+position: relative;
+top: -70px;
+flex-direction: row;
+overflow: hidden;
+}
+form input{
+    background-color: #F6F6F6;
+    opacity: 1px;
+    border: 2px solid #FFFFFF;
+    width: 418px;
+height: 50px;
+position: relative;
+bottom: -10px;
+border-bottom: 10px solid #D3E10E;
+}
+form button{
+    width: 206px;
+    height: 50px;
+    background: #D3E10E;
+opacity: 1;
+border: 2px solid #FFFFFF;
+margin: 10px;
+position: relative;
+bottom: -14px;
+font-family: Assistant;
+letter-spacing: 0px;
+color: #011560;
+opacity: 1;
+font-weight: bold;
+font-size: 1.3rem;
+}
+form label{
+    font-family: Assistant;
+letter-spacing: 0px;
+color: #011560;
+opacity: 1;
+position: relative;
+left: -50px;
+bottom: 25px;
+font-weight: bold;
+}
+#name{
+    position: relative;
+left: -65px;
+}
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+        top: -400px;
+    }
+    p {
+        top: -360px;
+    }
+    form {
+        top: -50px;
+    }
+    form input {
+        width: 350px;
+    }
+    form button {
+        width: 180px;
+    }
+    form label {
+        left: -40px;
+    }
+    #name {
+        left: -50px;
+    }
+}
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 3.5rem;
+        top: -350px;
+    }
+    p {
+        top: -320px;
+    }
+    form {
+        top: -30px;
+    }
+    form input {
+        width: 300px;
+    }
+    form button {
+        width: 160px;
+    }
+    form label {
+        left: -30px;
+    }
+    #name {
+        left: -40px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+        top: -300px;
+    }
+    p {
+        top: -280px;
+    }
+    form {
+        top: -20px;
+    }
+    form input {
+        width: 250px;
+    }
+    form button {
+        width: 140px;
+    }
+    form label {
+        left: -20px;
+    }
+    #name {
+        left: -30px;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2.5rem;
+        top: -250px;
+    }
+    p {
+        top: -240px;
+    }
+    form {
+        top: -10px;
+    }
+    form input {
+        width: 200px;
+    }
+    form button {
+        width: 120px;
+    }
+    form label {
+        left: -10px;
+    }
+    #name {
+        left: -20px;
+    }
+}

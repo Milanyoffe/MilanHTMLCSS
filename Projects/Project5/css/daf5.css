@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.stash {
+    background-color: #ffffff;
+    border: 5px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 1000px;
+    height: 550px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+form {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+form input, form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+img{
+    position: relative;
+    top: -400px;
+    left: 500px;
+    max-width: 100%;
+    height: auto;
+    height: 400px;
+    width: 400px;
+    border: 1px solid #000;
+    border-radius: 10%;
+}
+@media (max-width: 1200px) {
+    .stash {
+        width: 800px;
+        height: 450px;
+    }
+    img {
+        top: -300px;
+        left: 300px;
+        height: 300px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .stash {
+        width: 600px;
+        height: 400px;
+    }
+    img {
+        top: -250px;
+        left: 200px;
+        height: 250px;
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stash {
+        width: 100%;
+        height: auto;
+        margin: 10px;
+    }
+    form {
+        max-width: 100%;
+    }
+    img {
+        position: static;
+        margin: 0 auto;
+        display: block;
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+    }
+    .stash {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    form {
+        padding: 20px;
+    }
+    img {
+        height: 150px;
+        width: 150px;
+    }
+}

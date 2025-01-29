@@ -1,0 +1,596 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(28, 28, 28);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: rgb(12, 12, 12);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 5000;
+}
+
+header h1 {
+    margin: 0;
+    flex: 1;
+    text-align: left;
+    background: linear-gradient(to right, #015ca7, #009ece);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Gabarito;
+    font-size: 3rem;
+    letter-spacing: 1.5px;
+    margin-left: 180px;
+    user-select: none;
+}
+
+header h1:hover {
+    background: linear-gradient(to right, #009ece, #015ca7);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 1s;
+}
+
+header nav {
+    flex: 15;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    font-family: Exo;
+    font-size: 1.4rem;
+    background-color: rgb(12, 12, 12);
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: gray;
+    background-color: rgb(12, 12, 12);
+}
+
+header nav ul li a:hover {
+    color: whitesmoke;
+    transition: color 0.2s ease;
+}
+
+header button {
+    background-color: white;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    cursor: pointer;
+    margin-right: 180px;
+    font-family: Exo;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: rgb(12, 12, 12);
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+header button:hover {
+    background-color: whitesmoke;
+    color: rgb(21, 21, 21);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+section.home img {
+    position: relative;
+    top: -20px;
+    display: block;
+    margin: 20px auto;
+    max-width: 20%;
+    border-radius: 30px;
+    clip-path: circle(40%);
+    box-shadow: 10px 10px 50px rgb(21, 21, 21);
+    border: 2px solid rgb(34, 34, 3);
+}
+
+section.home {
+    height: 855px;
+    margin-top: 100px;
+}
+
+section.home h1 {
+    position: relative;
+    top: -80px;
+    text-align: center;
+    font-family: karla;
+    font-size: 5rem;
+    background: linear-gradient(to right, #015ca7, #009ece);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+}
+
+section.home h2 {
+    position: relative;
+    top: -70px;
+    text-align: center;
+    font-family: karla;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: white;
+    user-select: none;
+}
+
+section.home span.DevLinear {
+    font-weight: bold;
+    text-align: center;
+    font-family: karla;
+    font-size: 2.5rem;
+    background: linear-gradient(to right, #015ca7, #009ece);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section.home p {
+    text-align: center;
+    font-family: Exo;
+    color: gray;
+    font-size: 1rem;
+    position: relative;
+    top: -55px;
+}
+
+section.home button.Resume {
+    display: block;
+    margin: auto;
+    border: 2px solid white;
+    background-color: rgb(28, 28, 28);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    font-family: Exo;
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative;
+    top: -20px;
+    right: 20px;
+}
+
+section.home button.Resume:hover {
+    background-color: whitesmoke;
+    color: rgb(21, 21, 21);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+section.about {
+    background-color: rgb(20, 20, 20);
+    height: 950px;
+    padding-left: 20px;
+}
+
+section.about h1 {
+    text-align: left;
+    font-family: Gabarito;
+    font-size: 5rem;
+    background: linear-gradient(to right, #015ca7, #009ece);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    margin-left: 200px;
+    position: relative;
+    top: 200px;
+}
+
+section.about h2 {
+    text-align: left;
+    font-family: Gabarito;
+    font-size: 4rem;
+    background: linear-gradient(to right, #015ca7, #009ece);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    margin-left: 200px;
+    margin-top: 20px;
+    position: relative;
+    top: 230px;
+}
+
+section.about p {
+    color: gray;
+    font-family: Exo;
+    background-color: rgb(20, 20, 20);
+    margin-left: 200px;
+    margin-top: 20px;
+    position: relative;
+    top: 220px;
+    max-width: 800px; /* Added */
+}
+
+section.about ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0 200px;
+    font-size: 2rem;
+    color: gray;
+    background-color: rgb(20, 20, 20);
+    position: relative;
+    top: 240px;
+}
+
+section.about ul li {
+    margin-bottom: 80px;
+    background-color: rgb(20, 20, 20);
+    user-select: none;
+    font-family: karla;
+    font-weight: bold;
+    transition: color 0.5s ease-in-out;
+}
+
+section.about ul li.orange:hover {
+    color: rgb(224, 71, 0);
+}
+
+section.about ul li.blue:hover {
+    color: rgb(18, 147, 233);
+}
+
+section.about ul li.yellow:hover {
+    color: rgb(192, 192, 70);
+}
+
+section.projects {
+    background-color: rgb(20, 20, 20);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section.projects h1 {
+    font-family: Gabarito;
+    font-size: 4rem;
+    background: linear-gradient(to right, #015ca7, #009ece);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    margin-bottom: 40px;
+}
+
+section.projects .box {
+    background-color: rgb(28, 28, 28);
+    border: 2px solid white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    width: calc(25% - 40px);
+    height: 400px;
+    vertical-align: top;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+section.projects .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+section.projects .box h2 {
+    font-family: Gabarito;
+    font-size: 2rem;
+    background: linear-gradient(to right, #015ca7, #009ece);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+}
+
+section.projects .box p {
+    font-family: Exo;
+    color: gray;
+    font-size: 1rem;
+}
+
+section.contact {
+    background-color: rgb(20, 20, 20);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section.contact h1 {
+    font-family: Gabarito;
+    font-size: 4rem;
+    background: linear-gradient(to right, #015ca7, #009ece);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    user-select: none;
+    margin-bottom: 40px;
+}
+
+section.contact form {
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.contact form label {
+    color: gray; 
+    font-family: Exo; 
+    font-size: 1.3rem; 
+    margin-bottom: 10px; 
+    background-color: rgb(20, 20, 20);
+}
+
+section.contact form input,
+section.contact form textarea {
+    width: 25%;
+    max-width: 500px;
+    height: 70px;
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-family: Exo;
+    font-size: 1rem;
+    resize: none;  /* resizing */
+}
+
+section.contact form input::placeholder,
+section.contact form textarea::placeholder {
+    color: gray;
+    
+}
+
+section.contact form button {
+    background-color: rgb(20, 20, 20);
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: Exo;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+section.contact form button:hover {
+    background-color: whitesmoke;
+    color: rgb(21, 21, 21);
+}
+
+footer.footer-content {
+    color: rgb(21, 21, 21);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+    font-family: Exo;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    header h1 {
+        margin-left: 0;
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    header nav {
+        flex: 1;
+        margin-top: 10px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header button {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    section.home img {
+        max-width: 50%;
+    }
+
+    section.home h1 {
+        font-size: 3rem;
+    }
+
+    section.home h2 {
+        font-size: 1.5rem;
+    }
+
+    section.home p {
+        font-size: 0.8rem;
+    }
+
+    section.home button.Resume {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+
+    section.about h1,
+    section.about h2 {
+        font-size: 3rem;
+        margin-left: 20px;
+    }
+
+    section.about p,
+    section.about ul {
+        margin-left: 20px;
+        font-size: 1rem;
+    }
+
+    section.projects .box {
+        width: calc(100% - 40px);
+        margin: 20px auto;
+    }
+
+    section.contact form input,
+    section.contact form textarea {
+        width: 80%;
+    }
+    .ProjectsPhotos img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2.5rem;
+        margin-left: 100px;
+    }
+
+    header button {
+        margin-right: 100px;
+    }
+
+    section.home h1 {
+        font-size: 4rem;
+    }
+
+    section.home h2 {
+        font-size: 2rem;
+    }
+
+    section.home p {
+        font-size: 0.9rem;
+    }
+
+    section.home button.Resume {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    section.about h1,
+    section.about h2 {
+        font-size: 4rem;
+        margin-left: 100px;
+    }
+
+    section.about p,
+    section.about ul {
+        margin-left: 100px;
+        font-size: 1.5rem;
+    }
+
+    section.projects .box {
+        width: calc(50% - 40px);
+        margin: 20px auto;
+    }
+
+    section.contact form input,
+    section.contact form textarea {
+        width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    header button {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    section.home h1 {
+        font-size: 2rem;
+    }
+
+    section.home h2 {
+        font-size: 1rem;
+    }
+
+    section.home p {
+        font-size: 0.7rem;
+    }
+
+    section.home button.Resume {
+        font-size: 0.7rem;
+        padding: 5px 10px;
+    }
+
+    section.about h1,
+    section.about h2 {
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+
+    section.about p,
+    section.about ul {
+        margin-left: 10px;
+        font-size: 0.8rem;
+    }
+
+    section.projects .box {
+        width: calc(100% - 40px);
+        margin: 20px auto;
+    }
+
+    section.contact form input,
+    section.contact form textarea {
+        width: 90%;
+    }
+        div.icons {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        div.icons {
+            gap: 10px;
+        }
+    }
+div.icons{
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    border: 1px solid #000;
+}
+img.iconmain{
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color: #009ece;
+    border-radius: 40px;
+}
