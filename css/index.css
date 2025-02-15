@@ -395,25 +395,21 @@ footer.footer-content {
     font-family: Exo;
 }
 
-@media (max-width: 768px) {
+
+
+@media only screen and (max-width: 768px) {
     header {
-        flex-direction: column;
         padding: 10px;
     }
 
     header h1 {
-        margin-left: 0;
         font-size: 2rem;
-        text-align: center;
-    }
-
-    header nav {
-        flex: 1;
-        margin-top: 10px;
+        margin-left: 10px;
     }
 
     header nav ul {
         flex-direction: column;
+        align-items: center;
     }
 
     header nav ul li {
@@ -421,67 +417,93 @@ footer.footer-content {
     }
 
     header button {
-        margin-right: 0;
-        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+
+    section.home {
+        height: auto;
+        padding: 20px;
     }
 
     section.home img {
         max-width: 50%;
+        top: 0;
     }
 
     section.home h1 {
         font-size: 3rem;
+        top: 0;
     }
 
     section.home h2 {
         font-size: 1.5rem;
+        top: 0;
     }
 
     section.home p {
-        font-size: 0.8rem;
+        top: 0;
     }
 
     section.home button.Resume {
-        font-size: 0.8rem;
-        padding: 5px 10px;
+        top: 0;
+        right: 0;
+    }
+
+    section.about {
+        height: auto;
+        padding: 20px;
     }
 
     section.about h1,
     section.about h2 {
-        font-size: 3rem;
-        margin-left: 20px;
+        margin-left: 10px;
+        top: 0;
     }
 
-    section.about p,
+    section.about p {
+        margin-left: 10px;
+        top: 0;
+    }
+
     section.about ul {
-        margin-left: 20px;
-        font-size: 1rem;
+        margin-left: 10px;
+        top: 0;
     }
-
     section.projects .box {
         width: calc(100% - 40px);
-        margin: 20px auto;
+        margin: 10px 0;
     }
 
+    .ProjectsPhotos {
+        height: 150px;
+        width: 30%;
+        left: 0;
+        margin: 10px auto;
+        display: block;
+    }
     section.contact form input,
     section.contact form textarea {
         width: 80%;
     }
-    .ProjectsPhotos img {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        border-radius: 10px;
-    }
 }
-@media (max-width: 1024px) {
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
     header h1 {
         font-size: 2.5rem;
-        margin-left: 100px;
+        margin-left: 50px;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
     }
 
     header button {
-        margin-right: 100px;
+        margin-right: 50px;
+    }
+
+    section.home img {
+        max-width: 30%;
     }
 
     section.home h1 {
@@ -492,30 +514,28 @@ footer.footer-content {
         font-size: 2rem;
     }
 
-    section.home p {
-        font-size: 0.9rem;
-    }
-
-    section.home button.Resume {
-        font-size: 0.9rem;
-        padding: 8px 15px;
-    }
-
     section.about h1,
     section.about h2 {
-        font-size: 4rem;
-        margin-left: 100px;
+        margin-left: 50px;
     }
 
-    section.about p,
+    section.about p {
+        margin-left: 50px;
+    }
+
     section.about ul {
-        margin-left: 100px;
-        font-size: 1.5rem;
+        margin-left: 50px;
     }
 
     section.projects .box {
         width: calc(50% - 40px);
-        margin: 20px auto;
+    }
+
+    .ProjectsPhotos {
+        height: 220px;
+        width: 350px;
+        left: 0;
+        margin: 10px auto;
     }
 
     section.contact form input,
@@ -523,74 +543,11 @@ footer.footer-content {
         width: 50%;
     }
 }
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 1.5rem;
-        margin-left: 0;
+@media only screen and (min-width: 1025px) {
+    /* סקציית פרויקטים */
+    .ProjectsPhotos {
+        height: 260px;
+        width: 400px;
+        left: -10px;
     }
-
-    header button {
-        margin-right: 0;
-        margin-top: 10px;
-    }
-
-    section.home h1 {
-        font-size: 2rem;
-    }
-
-    section.home h2 {
-        font-size: 1rem;
-    }
-
-    section.home p {
-        font-size: 0.7rem;
-    }
-
-    section.home button.Resume {
-        font-size: 0.7rem;
-        padding: 5px 10px;
-    }
-
-    section.about h1,
-    section.about h2 {
-        font-size: 2rem;
-        margin-left: 10px;
-    }
-
-    section.about p,
-    section.about ul {
-        margin-left: 10px;
-        font-size: 0.8rem;
-    }
-
-    section.projects .box {
-        width: calc(100% - 40px);
-        margin: 20px auto;
-    }
-
-    section.contact form input,
-    section.contact form textarea {
-        width: 90%;
-    }
-        div.icons {
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        div.icons {
-            gap: 10px;
-        }
-    }
-div.icons{
-    display: flex;
-    justify-content: center;
-    gap: 400px;
-    border: 1px solid #000;
-}
-img.iconmain{
-    cursor: pointer;
-    transition: transform 0.3s ease;
-    background-color: #009ece;
-    border-radius: 40px;
 }

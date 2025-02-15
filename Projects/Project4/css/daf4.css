@@ -72,99 +72,78 @@ left: -65px;
 @media (max-width: 1200px) {
     h1 {
         font-size: 4rem;
-        top: -400px;
+        top: -380px;
     }
     p {
-        top: -360px;
+        top: -350px;
     }
     form {
-        top: -50px;
+        top: -60px;
+        margin-right: 10px;
     }
     form input {
         width: 350px;
+        height: 45px;
     }
     form button {
         width: 180px;
-    }
-    form label {
-        left: -40px;
-    }
-    #name {
-        left: -50px;
-    }
-}
-
-@media (max-width: 992px) {
-    h1 {
-        font-size: 3.5rem;
-        top: -350px;
-    }
-    p {
-        top: -320px;
-    }
-    form {
-        top: -30px;
-    }
-    form input {
-        width: 300px;
-    }
-    form button {
-        width: 160px;
-    }
-    form label {
-        left: -30px;
-    }
-    #name {
-        left: -40px;
+        height: 45px;
+        font-size: 1.1rem;
     }
 }
 
 @media (max-width: 768px) {
     h1 {
         font-size: 3rem;
-        top: -300px;
+        top: -320px;
     }
     p {
-        top: -280px;
+        top: -300px;
     }
     form {
-        top: -20px;
+        top: -50px;
+        margin-right: 5px;
+        flex-direction: column;
     }
-    form input {
-        width: 250px;
+    form input,
+    form button {
+        width: 90%;
+        height: 40px;
+        margin: 5px auto;
     }
     form button {
-        width: 140px;
+        font-size: 1rem;
     }
     form label {
         left: -20px;
-    }
-    #name {
-        left: -30px;
+        bottom: 15px;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 480px) {
     h1 {
         font-size: 2.5rem;
-        top: -250px;
+        top: -280px;
     }
     p {
-        top: -240px;
+        top: -250px;
+        font-size: 0.9rem;
     }
     form {
-        top: -10px;
+        top: -40px;
+        margin-right: 0;
     }
-    form input {
-        width: 200px;
+    form input,
+    form button {
+        width: 95%;
+        height: 35px;
     }
     form button {
-        width: 120px;
+        font-size: 0.9rem;
     }
     form label {
         left: -10px;
-    }
-    #name {
-        left: -20px;
+        bottom: 10px;
+        font-size: 0.9rem;
     }
 }

@@ -65,31 +65,39 @@ div.main label {
     left: 130px;
     top: 30px;
 }
-
 @media (max-width: 768px) {
     div.main {
-        width: 100%;
-        left: 0;
-        transform: none;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    div.main form {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        top: -50px;
-    }
-    div.main input, div.main button {
         width: 90%;
-        margin: 10px 5%;
+        padding: 15px;
+        top: -150px;
     }
     div.main label {
-        margin: 10px 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
     }
 }
 
+@media (max-width: 480px) {
+    div.main {
+        width: 95%;
+        padding: 10px;
+        top: -100px;
+    }
+    div.main h1 {
+        font-size: 1.5rem;
+    }
+    div.main p {
+        font-size: 0.9rem;
+    }
+    div.main input,
+    div.main button {
+        width: 95%;
+    }
+    div.main label {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 15px;
+        font-size: 0.9rem;
+    }
+}

@@ -112,42 +112,55 @@ left: -65px;
         font-size: 5rem;
     }
     h2 {
-        top: -250px;
+        top: -220px;
+        font-size: 2rem;
     }
     h4 {
-        top: -230px;
+        top: -200px;
+        font-size: 1.5rem;
     }
     form {
         top: -150px;
+        margin: 0 auto;
+        width: 90%;
     }
     form input, form button {
-        width: 100%;
-        max-width: 250px;
+        max-width: 100%;
+    }
+    form label {
+        left: -30px;
+        bottom: 20px;
     }
 }
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
     h2 {
-        top: -200px;
+        top: -150px;
+        font-size: 1.5rem;
     }
     h4 {
-        top: -180px;
+        top: -130px;
+        font-size: 1.2rem;
     }
     form {
         top: -100px;
+        width: 95%;
     }
-    form input, form button {
-        width: 100%;
-        max-width: 200px;
+    form input {
+        width: 95%;
+        height: 40px;
+    }
+    form button {
+        width: 95%;
+        height: 40px;
+        font-size: 0.9rem;
     }
     form label {
-        left: 0;
+        left: -20px;
         bottom: 15px;
-    }
-    #name {
-        left: 0;
+        font-size: 0.9rem;
     }
 }
