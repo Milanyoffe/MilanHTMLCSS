@@ -397,6 +397,7 @@ footer.footer-content {
 
 
 
+
 @media only screen and (max-width: 768px) {
     header {
         padding: 10px;
@@ -419,7 +420,6 @@ footer.footer-content {
     header button {
         margin-right: 10px;
     }
-
 
     section.home {
         height: auto;
@@ -470,21 +470,24 @@ footer.footer-content {
         margin-left: 10px;
         top: 0;
     }
+
     section.projects .box {
         width: calc(100% - 40px);
         margin: 10px 0;
+        overflow: hidden; 
     }
 
-    .ProjectsPhotos {
-        height: 150px;
-        width: 30%;
-        left: 0;
-        margin: 10px auto;
-        display: block;
-    }
     section.contact form input,
     section.contact form textarea {
         width: 80%;
+    }
+
+    .ProjectsPhotos {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -529,13 +532,15 @@ footer.footer-content {
 
     section.projects .box {
         width: calc(50% - 40px);
+        overflow: hidden; 
     }
 
     .ProjectsPhotos {
-        height: 220px;
-        width: 350px;
-        left: 0;
-        margin: 10px auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
     }
 
     section.contact form input,
@@ -543,11 +548,25 @@ footer.footer-content {
         width: 50%;
     }
 }
+
 @media only screen and (min-width: 1025px) {
-    /* סקציית פרויקטים */
-    .ProjectsPhotos {
-        height: 260px;
-        width: 400px;
-        left: -10px;
+    section.projects .box {
+        overflow: hidden; 
     }
+
+    .ProjectsPhotos {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+.ProjectsPhotos {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
 }
